@@ -1,0 +1,123 @@
+/* SillyBunny Pronouns — editor + settings styling */
+
+.sbp-editor {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sbp-title {
+    margin: 0;
+    gap: 6px;
+}
+
+/* Column headers + set rows share the same flex layout so cells line up. */
+.sbp-header,
+.sbp-set {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.sbp-header {
+    font-size: calc(var(--mainFontSize) * 0.8);
+    opacity: 0.8;
+}
+
+.sbp-cell {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.sbp-cell .text_pole {
+    width: 100%;
+}
+
+.sbp-field-info {
+    cursor: help;
+    font-size: 0.85em;
+}
+
+.sbp-sets {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Trash button at the end of each set row; spacer keeps the header aligned. */
+.sbp-remove,
+.sbp-remove-spacer {
+    flex: 0 0 auto;
+    width: 28px;
+    text-align: center;
+}
+
+.sbp-remove {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.sbp-controls {
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+}
+
+.sbp-preset {
+    min-width: 78px;
+    padding: 3px 6px;
+    text-align: center;
+    font-size: calc(var(--mainFontSize) * 0.8);
+}
+
+.sbp-preset-multi {
+    border: 1px solid var(--SmartThemeQuoteColor, var(--SmartThemeBodyColor));
+}
+
+.sbp-multi-label,
+.sbp-option-label {
+    font-size: calc(var(--mainFontSize) * 0.85);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sbp-options {
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.sbp-options select.text_pole {
+    width: auto;
+    min-width: 0;
+}
+
+/* Settings panel */
+.sbp-settings-row {
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sbp-settings-row input[type="number"] {
+    max-width: 80px;
+}
+
+#sbp_settings textarea {
+    width: 100%;
+    font-size: calc(var(--mainFontSize) * 0.85);
+}
+
+/* Replacer popup table */
+.popup .pronoun-replacer-table {
+    margin: 10px auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.popup .pronoun-replacer-table td,
+.popup .pronoun-replacer-table th {
+    padding: 1px 6px;
+}

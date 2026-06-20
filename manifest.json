@@ -1,0 +1,15 @@
+{
+    "display_name": "Pronouns (Multiple)",
+    "loading_order": 42,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "aracnai",
+    "version": "1.0.0",
+    "homePage": "https://github.com/aracnai/SillyBunny-Pronouns",
+    "hooks": {
+        "activate": "init",
+        "clean": "clean"
+    }
+}
