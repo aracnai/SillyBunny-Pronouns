@@ -1,0 +1,67 @@
+<div id="sbp_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b data-i18n="Pronouns (Multiple)">Pronouns (Multiple)</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="flex-container flexFlowColumn">
+
+                <h4 data-i18n="Pronoun directive">Pronoun directive</h4>
+                <small data-i18n="When a persona or character has two or more pronoun sets, an instruction is injected telling the model to alternate between them. This is what makes the model actually use multiple pronouns in its own writing.">
+                    When a persona or character has two or more pronoun sets, an instruction is injected telling the model to alternate between them. This is what makes the model actually use multiple pronouns in its own writing.
+                </small>
+
+                <label class="checkbox_label" for="sbp_directive_enabled">
+                    <input type="checkbox" id="sbp_directive_enabled" />
+                    <span data-i18n="Inject pronoun directive (default)">Inject pronoun directive (default)</span>
+                </label>
+
+                <div class="flex-container alignItemsCenter sbp-settings-row">
+                    <label for="sbp_directive_depth" data-i18n="Injection depth">Injection depth</label>
+                    <input type="number" id="sbp_directive_depth" class="text_pole widthNatural" min="0" max="999" step="1" />
+                    <label for="sbp_directive_role" data-i18n="Role">Role</label>
+                    <select id="sbp_directive_role" class="text_pole widthNatural">
+                        <option value="0" data-i18n="System">System</option>
+                        <option value="1" data-i18n="User">User</option>
+                        <option value="2" data-i18n="Assistant">Assistant</option>
+                    </select>
+                </div>
+
+                <label for="sbp_directive_persona" data-i18n="Persona directive template">Persona directive template</label>
+                <small data-i18n="Use %LIST% for the formatted pronoun sets. {{user}} / {{char}} are resolved normally.">Use <code>%LIST%</code> for the formatted pronoun sets. <code>{{user}}</code> / <code>{{char}}</code> are resolved normally.</small>
+                <textarea id="sbp_directive_persona" class="text_pole textarea_compact" rows="3"></textarea>
+
+                <label for="sbp_directive_character" data-i18n="Character directive template">Character directive template</label>
+                <textarea id="sbp_directive_character" class="text_pole textarea_compact" rows="3"></textarea>
+
+                <div class="flex-container" style="margin-top: 6px;">
+                    <div id="sbp_directive_reset" class="menu_button" data-i18n="Reset directive templates">Reset directive templates</div>
+                </div>
+
+                <hr style="width: 100%; margin: 10px 0;" />
+
+                <h4 data-i18n="Macro aliases">Macro aliases</h4>
+                <label class="checkbox_label" for="sbp_enable_shorthands">
+                    <input type="checkbox" id="sbp_enable_shorthands" />
+                    <span title="Enables English shorthand macros like {{she}}, {{him}}, {{their_}} for the persona."
+                        data-i18n="Enable shorthand macros (persona)">Enable shorthand macros (persona)</span>
+                </label>
+
+                <small data-i18n="Only enable the compatibility macros below if you import character cards from those platforms.">
+                    Only enable the compatibility macros below if you import character cards from those platforms.
+                </small>
+                <label class="checkbox_label" for="sbp_enable_wyvern_compat">
+                    <input type="checkbox" id="sbp_enable_wyvern_compat" />
+                    <span title="Enables WyvernChat capitalized macros: {{pronounSubjectiveCap}}, etc."
+                        data-i18n="WyvernChat: capitalized variants">WyvernChat: capitalized variants</span>
+                </label>
+                <label class="checkbox_label" for="sbp_enable_janitor_compat">
+                    <input type="checkbox" id="sbp_enable_janitor_compat" />
+                    <span title="Enables JanitorAI-compatible macros: {{sub}}, {{obj}}, {{poss}}, {{poss_p}}, {{ref}}."
+                        data-i18n="JanitorAI: compatibility macros">JanitorAI: compatibility macros</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
