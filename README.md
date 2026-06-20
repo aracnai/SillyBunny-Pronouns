@@ -13,7 +13,7 @@ one way. This extension fixes that two ways at once:
    that makes the model itself use varied pronouns in its own writing.
 
 Ported from and inspired by the [SillyTavern-Pronouns](https://github.com/SillyTavern/SillyTavern-Pronouns)
-extension by Wolfsblvt (AGPL-3.0).
+extension by [Wolfsblvt](https://github.com/Wolfsblvt) and [Ana](https://github.com/phampyk).
 
 ## Installation
 
@@ -116,4 +116,4 @@ Uninstalling removes all pronoun data and the injected directives.
 
 ## License
 
-AGPL-3.0 — see [LICENSE](LICENSE). Based on SillyTavern-Pronouns by Wolfsblvt.
+AGPL-3.0 — see [LICENSE](LICENSE). Based on [SillyTavern-Pronouns](https://github.com/SillyTavern/SillyTavern-Pronouns).
